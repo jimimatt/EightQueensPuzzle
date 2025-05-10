@@ -1,0 +1,45 @@
+[project]
+name = "eightqueenspuzzle"
+version = "0.1.0"
+description = "Programming puzzle: Place 8 Queens on a 8x8 board that no two queens threaten each other."
+authors = [
+    {name = "Matthias Telöken", email = "matthias.teloeken@posteo.de"},
+]
+dependencies = []
+requires-python = "==3.12.*"
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICEN[CS]E*"]
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "A",  # flake8-builtins
+    "ANN",  # mypy
+    "ARG",  # flake8-unused-arguments
+    "B",  # Bugbear
+    "C4",  # flake8-comprehensions
+    "DTZ",  # flake8-datetimez
+    "E",  # pycodestyle
+    "F",  # Pyflakes
+    "FLY",  # flynt
+    "FA",  # flake8-fututre-annotations
+    "I",  # isort
+    "PTH",  # flake8-use-pathlib
+    "SIM",  # flake8-simplify
+    "TCH",  # flake8-type-checking
+    "UP",  # pyupgrade
+    "W",  # pycodestyle
+    "C90",  # mccabe
+]
+
+[tool.ruff.format]
+quote-style = "preserve"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
